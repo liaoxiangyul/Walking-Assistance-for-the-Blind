@@ -126,9 +126,10 @@ This is a traffic signal recognition program that uses the OpenCV library to pro
 7.Determine the color of the traffic signal based on the size relationship of the red and green pixel areas
 8.Mark the detected traffic signal color in the original image and display the video in real-time.
 And according to the recognition results, control the vibration motor and buzzer. When the result is a red light, the motor vibrates, and when the result is a green light, the buzzer works.
-
+![](images/demounit.jpg)
 
 The accelerometer part of the code is used to read acceleration values from a connected BMA220 accelerometer sensor through the I2C communication protocol and detect if a fall-down event occurs based on the acceleration data.
 The code starts by including necessary libraries and defining constants for the sensor's I2C address and scale factor. It initializes the I2C communication and sets the sensor to normal mode with a data output rate of 100Hz.
 The main loop of the code continuously reads acceleration values from the sensor using specific register addresses and converts the raw data to gravity acceleration units. It then calculates the magnitude of acceleration and subtracts 1g (acceleration due to gravity) from it. If the resulting value is greater than 1.9g, it outputs a warning message indicating that a fall-down event is detected. Otherwise, it outputs a message indicating no fall-down event is detected.
 The code can be extended to control other devices or take further actions when a fall-down event is detected, such as vibrating a motor and activating a buzzer to attract the attention of others and seek help. Additionally, a reset button is set up to restart the program by long-pressing it for three seconds, in case of false alarms.
+![](images/demounit.jpg)
