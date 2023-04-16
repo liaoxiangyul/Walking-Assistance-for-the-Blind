@@ -126,6 +126,7 @@ This is a traffic signal recognition program that uses the OpenCV library to pro
  7. Determine the color of the traffic signal based on the size relationship of the red and green pixel areas
  8. Mark the detected traffic signal color in the original image and display the video in real-time.
 And according to the recognition results, control the vibration motor and buzzer. When the result is a red light, the motor vibrates, and when the result is a green light, the buzzer works.
+
 ![](images/green_light_detection.gif)
 ![](images/red_light_detection.gif)
 The accelerometer part of the code is used to read acceleration values from a connected BMA220 accelerometer sensor through the I2C communication protocol and detect if a fall-down event occurs based on the acceleration data.
