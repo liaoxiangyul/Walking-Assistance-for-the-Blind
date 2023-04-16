@@ -83,5 +83,20 @@ int main()
  make
  ./test
  ```
+### 1.2 WiringPi
+#### Download and install
+```cpp
+wget https://project-downloads.drogon.net/wiringpi-latest.deb
+sudo dpkg -i wiringpi-latest.deb
+```
+##### Check if wiringPi is installed successfully
+```cpp
+gpio -v
+```
+##### Enter the command below and it will read all accessible pins and print a table of their pin numbers (wiringPi and BCM_GPIO, corresponding to the diagram), along with their modes and values.
+```cpp
+gpio readall
+```
+
 
 
