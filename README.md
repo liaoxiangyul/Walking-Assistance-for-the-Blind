@@ -117,17 +117,17 @@ This is a switch button with a transparent cap and an internal LED that lights u
 ![](images/demounit.jpg)
 ## 3.Software debugging
 This is a traffic signal recognition program that uses the OpenCV library to process video images and detect red and green traffic lights in the image. The main process is as follows:
-1.Read camera image
-2.Adjust image brightness
-3.Convert the image from BGR color space to YCrCb color space
-4.Split red and green based on the Cr component
-5.Dilate and erode the separated red and green channels respectively
-6.Use contour detection method to detect red and green regions and calculate their pixel area
-7.Determine the color of the traffic signal based on the size relationship of the red and green pixel areas
-8.Mark the detected traffic signal color in the original image and display the video in real-time.
+ 1.Read camera image
+ 2.Adjust image brightness
+ 3.Convert the image from BGR color space to YCrCb color space
+ 4.Split red and green based on the Cr component
+ 5.Dilate and erode the separated red and green channels respectively
+ 6.Use contour detection method to detect red and green regions and calculate their pixel area
+ 7.Determine the color of the traffic signal based on the size relationship of the red and green pixel areas
+ 8.Mark the detected traffic signal color in the original image and display the video in real-time.
 And according to the recognition results, control the vibration motor and buzzer. When the result is a red light, the motor vibrates, and when the result is a green light, the buzzer works.
-![](images/demounit.jpg)
-
+![](images/green_light_detection.gif)
+![](images/red_light_detection.gif)
 The accelerometer part of the code is used to read acceleration values from a connected BMA220 accelerometer sensor through the I2C communication protocol and detect if a fall-down event occurs based on the acceleration data.
 The code starts by including necessary libraries and defining constants for the sensor's I2C address and scale factor. It initializes the I2C communication and sets the sensor to normal mode with a data output rate of 100Hz.
 The main loop of the code continuously reads acceleration values from the sensor using specific register addresses and converts the raw data to gravity acceleration units. It then calculates the magnitude of acceleration and subtracts 1g (acceleration due to gravity) from it. If the resulting value is greater than 1.9g, it outputs a warning message indicating that a fall-down event is detected. Otherwise, it outputs a message indicating no fall-down event is detected.
