@@ -3,7 +3,7 @@
 The purpose of this project is to make a device that assists the blind to walk. It uses computer vision to identify traffic lights and gives corresponding vibration or sound feedback to inform the traffic lights at the current intersection. The further objective is adding the function of fall detection and alarm.
 
 ## Social Media
-[Youtube]([(https://youtu.be/rab-Rcky8Bs)](https://youtu.be/rab-Rcky8Bs))
+[Youtube]([((https://youtu.be/rab-Rcky8Bs))](https://youtu.be/rab-Rcky8Bs))
 
 
 ## 1.Install required libraries
