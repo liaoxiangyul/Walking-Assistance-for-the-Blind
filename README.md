@@ -97,6 +97,17 @@ gpio -v
 ```cpp
 gpio readall
 ```
-
+## 2.Hardware introduction
+#### 8MP Raspberry Pi Camera Board -  RPI 8MP CAMERA BOARD
+The Raspberry Pi camera module v2 is a small add-on board for Raspberry Pi, featuring a fixed focus lens and a high quality 8 megapixel Sony IMX219 image sensor. It can take static images of 3280 x 2464 pixels and can capture video at 1080p30, 720p60 and 640x480p90 resolutions. The camera connects to Raspberry Pi via a short ribbon cable and uses the dedicated CSi interface. The camera is lightweight and small, making it suitable for mobile or other applications where size and weight are important. The camera module can be used in various applications, including CCTV security camera, motion detection, and time lapse photography. All software is supported within the latest version of Raspbian Operating System.
+#### Grove Vibration Motor
+The Grove - Vibration Motor is a compact and easy-to-use module consisting of a coin-type, permanent magnet coreless DC motor. It vibrates when the input logic is HIGH, providing a way to notify the user. It has a small size of 24mm x 20mm, making it easy to embed into your project. The module features a Grove-compatible interface, allowing for simple connection with Arduino boards without requiring soldering. It is also compatible with Raspberry Pi. The module's dimensions are 24mm x 20mm x 9.8mm.
+#### 3 Wire 3 Pins 3.3V - 5V Alarm Active Buzzer Sensor Module Arduino Raspberry Pi
+This module is a small buzzer designed for the Sensor Shield that allows you to create different sounds based on the frequency of I/O toggling. By plugging the buzzer module into the Sensor Shield and specifying the pin, frequency, and duration, you can play melodies with your Arduino/Chinduino. The module uses an 8550 or 9012 transistor driver and operates at 3.3V - 5V. It has a fixed bolt hole for easy installation and can be connected to external microcontroller IO ports through its VCC, GND, and I/O wires. The module's PCB size is 3.3cm x 1.3cm.
+#### Fermion: BMA220 Digital Triaxial Acceleration Sensor (Breakout) (±16g)
+The Triple Axis Accelerometer with Bosch BMA220 is a breakboard sensor with an ultra-small size of 2mm x 2mm, designed for low power consumption applications. It has SPI and I2C interfaces and can measure accelerations in 3 perpendicular axes, enabling it to sense tilt, motion, shock, and vibration. This sensor is ideal for use in mobile devices, handhelds, computer peripherals, man-machine interfaces, virtual reality features, and game controllers. It has many configurable features that allow for flexibility in integrating the sensor into various systems. The recommended power supply is 3.3V, and the sensor can be used with Arduino controllers. Its specifications include an acceleration range of ±2g/±4g/±8g/±16g, LED power indication, and a compact and easy-to-use design with a size of 13x22mm (0.51x0.87").
+#### Gravity: LED Button - Blue
+This is a switch button with a transparent cap and an internal LED that lights up when the button is pressed down. The button can be used with micro:bit for various interactive projects, and the module outputs a high signal when the button is pressed down, and a low signal when released. The button can operate on a voltage of +3.3-5V, and comes with a PH2.0-3P connector. It has a dimension of 27×26.5mm/1.06×1.04”, and is available in colors of red, yellow, green, blue, and white.
+### Hardware architecture
 
 
