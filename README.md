@@ -10,7 +10,7 @@ The purpose of this project is to make a device that assists the blind to walk. 
 Name  | ID  | Role
  ---- | ----- | ------  
  Xiangyu Liao  | 2742337L |  Embedded Engineer
- Xia Qing  | 2749265X | Hardware Engineer
+ Qing Xia  | 2749265X | Hardware Engineer
  Zetao Feng  | 2750321F | Test Engineer & Publicity & Software Engineer 
 
 
