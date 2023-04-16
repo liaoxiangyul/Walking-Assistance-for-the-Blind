@@ -113,7 +113,7 @@ The Triple Axis Accelerometer with Bosch BMA220 is a breakboard sensor with an u
 #### Gravity: LED Button - Blue
 This is a switch button with a transparent cap and an internal LED that lights up when the button is pressed down. The button can be used with micro:bit for various interactive projects, and the module outputs a high signal when the button is pressed down, and a low signal when released. The button can operate on a voltage of +3.3-5V, and comes with a PH2.0-3P connector. It has a dimension of 27×26.5mm/1.06×1.04”, and is available in colors of red, yellow, green, blue, and white.
 ### Hardware architecture
-![](images/hard.png)
+![](images/hardware architecture.png)
 ## 3.Software debugging
 This is a traffic signal recognition program that uses the OpenCV library to process video images and detect red and green traffic lights in the image. The main process is as follows:
 1.Read camera image
