@@ -112,4 +112,20 @@ The Triple Axis Accelerometer with Bosch BMA220 is a breakboard sensor with an u
 This is a switch button with a transparent cap and an internal LED that lights up when the button is pressed down. The button can be used with micro:bit for various interactive projects, and the module outputs a high signal when the button is pressed down, and a low signal when released. The button can operate on a voltage of +3.3-5V, and comes with a PH2.0-3P connector. It has a dimension of 27×26.5mm/1.06×1.04”, and is available in colors of red, yellow, green, blue, and white.
 ### Hardware architecture
 ![](images/hard.png)
+## 3.Software debugging
+This is a traffic signal recognition program that uses the OpenCV library to process video images and detect red and green traffic lights in the image. The main process is as follows:
+1.Read camera image
+2.Adjust image brightness
+3.Convert the image from BGR color space to YCrCb color space
+4.Split red and green based on the Cr component
+5.Dilate and erode the separated red and green channels respectively
+6.Use contour detection method to detect red and green regions and calculate their pixel area
+7.Determine the color of the traffic signal based on the size relationship of the red and green pixel areas
+8.Mark the detected traffic signal color in the original image and display the video in real-time.
+And according to the recognition results, control the vibration motor and buzzer. When the result is a red light, the motor vibrates, and when the result is a green light, the buzzer works.
 
+
+The accelerometer part of the code is used to read acceleration values from a connected BMA220 accelerometer sensor through the I2C communication protocol and detect if a fall-down event occurs based on the acceleration data.
+The code starts by including necessary libraries and defining constants for the sensor's I2C address and scale factor. It initializes the I2C communication and sets the sensor to normal mode with a data output rate of 100Hz.
+The main loop of the code continuously reads acceleration values from the sensor using specific register addresses and converts the raw data to gravity acceleration units. It then calculates the magnitude of acceleration and subtracts 1g (acceleration due to gravity) from it. If the resulting value is greater than 1.9g, it outputs a warning message indicating that a fall-down event is detected. Otherwise, it outputs a message indicating no fall-down event is detected.
+The code can be extended to control other devices or take further actions when a fall-down event is detected, such as vibrating a motor and activating a buzzer to attract the attention of others and seek help. Additionally, a reset button is set up to restart the program by long-pressing it for three seconds, in case of false alarms.
