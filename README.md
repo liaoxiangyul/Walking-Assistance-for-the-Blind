@@ -126,6 +126,9 @@ This is a switch button with a transparent cap and an internal LED that lights u
 ### Hardware architecture
 ![](images/hardware_architecture.png)
 
+### Sofeware architecture
+![](images/Software_architecture.png)
+
 ![](images/demounit.jpg)
 ## 3.Software debugging
 This is a traffic signal recognition program that uses the OpenCV library to process video images and detect red and green traffic lights in the image. The main process is as follows:
