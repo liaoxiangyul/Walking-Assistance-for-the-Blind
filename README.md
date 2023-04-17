@@ -153,3 +153,15 @@ The main loop of the code continuously reads acceleration values from the sensor
 The code can be extended to control other devices or take further actions when a fall-down event is detected, such as vibrating a motor and activating a buzzer to attract the attention of others and seek help. Additionally, a reset button (call back function) is set up to restart the program by long-pressing it for three seconds, in case of false alarms.
 
 ![](images/fall_detection.gif)
+
+## 4. How to biuld
+
+Step1. Login to Raspberry Pi Machine and Clone the repository
+Step2. Install Libraries
+Step3. Install and Biuld
+
+ ```cpp
+ cmake .
+ make
+ ./final
+ ```
