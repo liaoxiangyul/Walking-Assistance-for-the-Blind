@@ -157,7 +157,9 @@ The code can be extended to control other devices or take further actions when a
 ## 4. How to biuld
 
 Step1. Login to Raspberry Pi Machine and Clone the repository
+
 Step2. Install Libraries
+
 Step3. Install and Biuld
 
  ```cpp
